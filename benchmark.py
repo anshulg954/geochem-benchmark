@@ -77,7 +77,7 @@ except Exception as e:
     print("TabPFN2.5 not available:", e, file=sys.stderr)
 
 # Configuration
-DATA_DIR = Path("/home/guptaa/anshul/geochem-benchmark/data/")
+DATA_DIR = Path("/home/guptaa/anshul/geochem-benchmark/datasets/")
 OUT_DIR = Path("/home/guptaa/anshul/geochem-benchmark/results/")
 
 # -----------------------
