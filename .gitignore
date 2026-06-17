@@ -12,10 +12,6 @@ venv/
 .venv/
 env/
 
-# Results & logs
-results/
-logs/
-*.log
 
 # Jupyter
 .ipynb_checkpoints/
@@ -30,3 +26,4 @@ Thumbs.db
 
 # Ignore specific files
 run_eval.slurm
+catboost_info/

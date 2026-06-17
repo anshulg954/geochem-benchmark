@@ -1,0 +1,373 @@
+Job ID: 29177243
+Job Name: eval_pipeline
+Node: dlcgpu06
+Start Time: Tue Jun 16 09:29:46 PM CEST 2026
+Working Directory: /home/guptaa/anshul/geochem-benchmark
+Python version: Python 3.10.12
+CUDA Available:...
+True
+Starting evaluation pipeline...
+============================================================
+COMBINED CLASSIFICATION AND REGRESSION BENCHMARK
+============================================================
+
+============================================================
+CLASSIFICATION EVALUATION
+============================================================
+
+[1/6] AutomaticRock_classification.csv (Classification)
+Sampled 50000 rows (Stratified).
+ Warning: More than 10 classes (15). TabPFN2.5 will use ManyClassClassifier wrapper.
+  X: (50000, 12), y: (50000,)
+LogReg       | split 01 | ROC AUC: 0.9959 | Train Sum: 1001900156 | Test Sum: 248074844
+LogReg       | split 02 | ROC AUC: 0.9962 | Train Sum: 1000854923 | Test Sum: 249120077
+LogReg       | split 03 | ROC AUC: 0.9967 | Train Sum: 997954763 | Test Sum: 252020237
+LogReg       | split 04 | ROC AUC: 0.9966 | Train Sum: 1000357800 | Test Sum: 249617200
+LogReg       | split 05 | ROC AUC: 0.9968 | Train Sum: 998832358 | Test Sum: 251142642
+RandomForest | split 01 | ROC AUC: 1.0000 | Train Sum: 1001900156 | Test Sum: 248074844
+RandomForest | split 02 | ROC AUC: 0.9999 | Train Sum: 1000854923 | Test Sum: 249120077
+RandomForest | split 03 | ROC AUC: 1.0000 | Train Sum: 997954763 | Test Sum: 252020237
+RandomForest | split 04 | ROC AUC: 1.0000 | Train Sum: 1000357800 | Test Sum: 249617200
+RandomForest | split 05 | ROC AUC: 1.0000 | Train Sum: 998832358 | Test Sum: 251142642
+SVM          | split 01 | ROC AUC: 0.9999 | Train Sum: 1001900156 | Test Sum: 248074844
+SVM          | split 02 | ROC AUC: 0.9999 | Train Sum: 1000854923 | Test Sum: 249120077
+SVM          | split 03 | ROC AUC: 0.9999 | Train Sum: 997954763 | Test Sum: 252020237
+SVM          | split 04 | ROC AUC: 0.9999 | Train Sum: 1000357800 | Test Sum: 249617200
+SVM          | split 05 | ROC AUC: 0.9999 | Train Sum: 998832358 | Test Sum: 251142642
+MLP          | split 01 | ROC AUC: 1.0000 | Train Sum: 1001900156 | Test Sum: 248074844
+MLP          | split 02 | ROC AUC: 1.0000 | Train Sum: 1000854923 | Test Sum: 249120077
+MLP          | split 03 | ROC AUC: 1.0000 | Train Sum: 997954763 | Test Sum: 252020237
+MLP          | split 04 | ROC AUC: 1.0000 | Train Sum: 1000357800 | Test Sum: 249617200
+MLP          | split 05 | ROC AUC: 1.0000 | Train Sum: 998832358 | Test Sum: 251142642
+XGBoost      | split 01 | ROC AUC: 0.9999 | Train Sum: 1001900156 | Test Sum: 248074844
+XGBoost      | split 02 | ROC AUC: 1.0000 | Train Sum: 1000854923 | Test Sum: 249120077
+XGBoost      | split 03 | ROC AUC: 1.0000 | Train Sum: 997954763 | Test Sum: 252020237
+XGBoost      | split 04 | ROC AUC: 1.0000 | Train Sum: 1000357800 | Test Sum: 249617200
+XGBoost      | split 05 | ROC AUC: 1.0000 | Train Sum: 998832358 | Test Sum: 251142642
+LightGBM     | split 01 | ROC AUC: 0.6810 | Train Sum: 1001900156 | Test Sum: 248074844
+LightGBM     | split 02 | ROC AUC: 0.8559 | Train Sum: 1000854923 | Test Sum: 249120077
+LightGBM     | split 03 | ROC AUC: 0.8373 | Train Sum: 997954763 | Test Sum: 252020237
+LightGBM     | split 04 | ROC AUC: 0.5935 | Train Sum: 1000357800 | Test Sum: 249617200
+LightGBM     | split 05 | ROC AUC: 0.7727 | Train Sum: 998832358 | Test Sum: 251142642
+CatBoost     | split 01 | ROC AUC: 1.0000 | Train Sum: 1001900156 | Test Sum: 248074844
+CatBoost     | split 02 | ROC AUC: 1.0000 | Train Sum: 1000854923 | Test Sum: 249120077
+CatBoost     | split 03 | ROC AUC: 1.0000 | Train Sum: 997954763 | Test Sum: 252020237
+CatBoost     | split 04 | ROC AUC: 1.0000 | Train Sum: 1000357800 | Test Sum: 249617200
+CatBoost     | split 05 | ROC AUC: 1.0000 | Train Sum: 998832358 | Test Sum: 251142642
+TabPFN2.5    | split 01 | ROC AUC: 1.0000 | Train Sum: 1001900156 | Test Sum: 248074844
+TabPFN2.5    | split 02 | ROC AUC: 1.0000 | Train Sum: 1000854923 | Test Sum: 249120077
+TabPFN2.5    | split 03 | ROC AUC: 1.0000 | Train Sum: 997954763 | Test Sum: 252020237
+TabPFN2.5    | split 04 | ROC AUC: 1.0000 | Train Sum: 1000357800 | Test Sum: 249617200
+TabPFN2.5    | split 05 | ROC AUC: 1.0000 | Train Sum: 998832358 | Test Sum: 251142642
+Skipping Jorgenson_Liq_regression.csv: detected as regression (not classification)
+Skipping Jorgenson_Pressure_Cpx_regression.csv: detected as regression (not classification)
+Skipping Jorgenson_Temp_Cpx_regression.csv: detected as regression (not classification)
+Skipping Jorgenson_Temp_Liq_regression.csv: detected as regression (not classification)
+
+[6/6] TE_Data_classification.csv (Classification)
+  X: (3632, 14), y: (3632,)
+LogReg       | split 01 | ROC AUC: 0.8844 | Train Sum: 5282041 | Test Sum: 1311855
+LogReg       | split 02 | ROC AUC: 0.8681 | Train Sum: 5283570 | Test Sum: 1310326
+LogReg       | split 03 | ROC AUC: 0.9008 | Train Sum: 5278948 | Test Sum: 1314948
+LogReg       | split 04 | ROC AUC: 0.8739 | Train Sum: 5269679 | Test Sum: 1324217
+LogReg       | split 05 | ROC AUC: 0.8923 | Train Sum: 5261346 | Test Sum: 1332550
+RandomForest | split 01 | ROC AUC: 1.0000 | Train Sum: 5282041 | Test Sum: 1311855
+RandomForest | split 02 | ROC AUC: 1.0000 | Train Sum: 5283570 | Test Sum: 1310326
+RandomForest | split 03 | ROC AUC: 1.0000 | Train Sum: 5278948 | Test Sum: 1314948
+RandomForest | split 04 | ROC AUC: 1.0000 | Train Sum: 5269679 | Test Sum: 1324217
+RandomForest | split 05 | ROC AUC: 1.0000 | Train Sum: 5261346 | Test Sum: 1332550
+SVM          | split 01 | ROC AUC: 0.8879 | Train Sum: 5282041 | Test Sum: 1311855
+SVM          | split 02 | ROC AUC: 0.8849 | Train Sum: 5283570 | Test Sum: 1310326
+SVM          | split 03 | ROC AUC: 0.9001 | Train Sum: 5278948 | Test Sum: 1314948
+SVM          | split 04 | ROC AUC: 0.8826 | Train Sum: 5269679 | Test Sum: 1324217
+SVM          | split 05 | ROC AUC: 0.8826 | Train Sum: 5261346 | Test Sum: 1332550
+MLP          | split 01 | ROC AUC: 0.9421 | Train Sum: 5282041 | Test Sum: 1311855
+MLP          | split 02 | ROC AUC: 0.9316 | Train Sum: 5283570 | Test Sum: 1310326
+MLP          | split 03 | ROC AUC: 0.9191 | Train Sum: 5278948 | Test Sum: 1314948
+MLP          | split 04 | ROC AUC: 0.9267 | Train Sum: 5269679 | Test Sum: 1324217
+MLP          | split 05 | ROC AUC: 0.9188 | Train Sum: 5261346 | Test Sum: 1332550
+XGBoost      | split 01 | ROC AUC: 1.0000 | Train Sum: 5282041 | Test Sum: 1311855
+XGBoost      | split 02 | ROC AUC: 1.0000 | Train Sum: 5283570 | Test Sum: 1310326
+XGBoost      | split 03 | ROC AUC: 1.0000 | Train Sum: 5278948 | Test Sum: 1314948
+XGBoost      | split 04 | ROC AUC: 1.0000 | Train Sum: 5269679 | Test Sum: 1324217
+XGBoost      | split 05 | ROC AUC: 1.0000 | Train Sum: 5261346 | Test Sum: 1332550
+LightGBM     | split 01 | ROC AUC: 1.0000 | Train Sum: 5282041 | Test Sum: 1311855
+LightGBM     | split 02 | ROC AUC: 1.0000 | Train Sum: 5283570 | Test Sum: 1310326
+LightGBM     | split 03 | ROC AUC: 1.0000 | Train Sum: 5278948 | Test Sum: 1314948
+LightGBM     | split 04 | ROC AUC: 1.0000 | Train Sum: 5269679 | Test Sum: 1324217
+LightGBM     | split 05 | ROC AUC: 1.0000 | Train Sum: 5261346 | Test Sum: 1332550
+CatBoost     | split 01 | ROC AUC: 1.0000 | Train Sum: 5282041 | Test Sum: 1311855
+CatBoost     | split 02 | ROC AUC: 1.0000 | Train Sum: 5283570 | Test Sum: 1310326
+CatBoost     | split 03 | ROC AUC: 1.0000 | Train Sum: 5278948 | Test Sum: 1314948
+CatBoost     | split 04 | ROC AUC: 1.0000 | Train Sum: 5269679 | Test Sum: 1324217
+CatBoost     | split 05 | ROC AUC: 1.0000 | Train Sum: 5261346 | Test Sum: 1332550
+TabPFN2.5    | split 01 | ROC AUC: 1.0000 | Train Sum: 5282041 | Test Sum: 1311855
+TabPFN2.5    | split 02 | ROC AUC: 1.0000 | Train Sum: 5283570 | Test Sum: 1310326
+TabPFN2.5    | split 03 | ROC AUC: 1.0000 | Train Sum: 5278948 | Test Sum: 1314948
+TabPFN2.5    | split 04 | ROC AUC: 1.0000 | Train Sum: 5269679 | Test Sum: 1324217
+TabPFN2.5    | split 05 | ROC AUC: 1.0000 | Train Sum: 5261346 | Test Sum: 1332550
+
+Classification results: 80 rows
+
+============================================================
+REGRESSION EVALUATION
+============================================================
+Skipping AutomaticRock_classification.csv: detected as classification (not regression)
+
+[2/6] Jorgenson_Liq_regression.csv (Regression)
+  X: (1782, 9), y: (1782,)
+LinReg       | split 01 | RMSE: 5.796497
+LinReg       | split 02 | RMSE: 5.789366
+LinReg       | split 03 | RMSE: 6.131732
+LinReg       | split 04 | RMSE: 6.246270
+LinReg       | split 05 | RMSE: 6.581262
+RandomForest | split 01 | RMSE: 4.216150
+RandomForest | split 02 | RMSE: 3.986406
+RandomForest | split 03 | RMSE: 3.847532
+RandomForest | split 04 | RMSE: 3.964661
+RandomForest | split 05 | RMSE: 4.138437
+MLP          | split 01 | RMSE: 4.934071
+MLP          | split 02 | RMSE: 4.832741
+MLP          | split 03 | RMSE: 5.385079
+MLP          | split 04 | RMSE: 5.255223
+MLP          | split 05 | RMSE: 5.687403
+SVR          | split 01 | RMSE: 6.644899
+SVR          | split 02 | RMSE: 6.906931
+SVR          | split 03 | RMSE: 6.716832
+SVR          | split 04 | RMSE: 7.141626
+SVR          | split 05 | RMSE: 7.697838
+XGBoost      | split 01 | RMSE: 4.459096
+XGBoost      | split 02 | RMSE: 3.940314
+XGBoost      | split 03 | RMSE: 4.105433
+XGBoost      | split 04 | RMSE: 4.030477
+XGBoost      | split 05 | RMSE: 4.182345
+LightGBM     | split 01 | RMSE: 4.143912
+LightGBM     | split 02 | RMSE: 3.899798
+LightGBM     | split 03 | RMSE: 4.015769
+LightGBM     | split 04 | RMSE: 3.991763
+LightGBM     | split 05 | RMSE: 4.242932
+CatBoost     | split 01 | RMSE: 3.943457
+CatBoost     | split 02 | RMSE: 3.484011
+CatBoost     | split 03 | RMSE: 3.745515
+CatBoost     | split 04 | RMSE: 3.722345
+CatBoost     | split 05 | RMSE: 4.146441
+TabPFN2.5    | split 01 | RMSE: 2.668065
+TabPFN2.5    | split 02 | RMSE: 3.136580
+TabPFN2.5    | split 03 | RMSE: 2.660830
+TabPFN2.5    | split 04 | RMSE: 2.420965
+TabPFN2.5    | split 05 | RMSE: 3.046811
+
+[3/6] Jorgenson_Pressure_Cpx_regression.csv (Regression)
+  X: (1782, 10), y: (1782,)
+LinReg       | split 01 | RMSE: 3.886874
+LinReg       | split 02 | RMSE: 4.018097
+LinReg       | split 03 | RMSE: 4.179164
+LinReg       | split 04 | RMSE: 4.370348
+LinReg       | split 05 | RMSE: 4.130012
+RandomForest | split 01 | RMSE: 2.682364
+RandomForest | split 02 | RMSE: 2.745799
+RandomForest | split 03 | RMSE: 2.714326
+RandomForest | split 04 | RMSE: 3.106994
+RandomForest | split 05 | RMSE: 2.981128
+MLP          | split 01 | RMSE: 3.546741
+MLP          | split 02 | RMSE: 3.679425
+MLP          | split 03 | RMSE: 3.586942
+MLP          | split 04 | RMSE: 3.976512
+MLP          | split 05 | RMSE: 3.750122
+SVR          | split 01 | RMSE: 5.829464
+SVR          | split 02 | RMSE: 6.055552
+SVR          | split 03 | RMSE: 5.873221
+SVR          | split 04 | RMSE: 6.378520
+SVR          | split 05 | RMSE: 6.559073
+XGBoost      | split 01 | RMSE: 2.906868
+XGBoost      | split 02 | RMSE: 2.877276
+XGBoost      | split 03 | RMSE: 2.773627
+XGBoost      | split 04 | RMSE: 3.124108
+XGBoost      | split 05 | RMSE: 2.971015
+LightGBM     | split 01 | RMSE: 2.716326
+LightGBM     | split 02 | RMSE: 2.947507
+LightGBM     | split 03 | RMSE: 2.748169
+LightGBM     | split 04 | RMSE: 3.085440
+LightGBM     | split 05 | RMSE: 2.848173
+CatBoost     | split 01 | RMSE: 2.679623
+CatBoost     | split 02 | RMSE: 2.749064
+CatBoost     | split 03 | RMSE: 2.794527
+CatBoost     | split 04 | RMSE: 2.967385
+CatBoost     | split 05 | RMSE: 2.869869
+TabPFN2.5    | split 01 | RMSE: 2.240215
+TabPFN2.5    | split 02 | RMSE: 1.998936
+TabPFN2.5    | split 03 | RMSE: 2.457986
+TabPFN2.5    | split 04 | RMSE: 2.547398
+TabPFN2.5    | split 05 | RMSE: 2.121461
+
+[4/6] Jorgenson_Temp_Cpx_regression.csv (Regression)
+  X: (1782, 10), y: (1782,)
+LinReg       | split 01 | RMSE: 88.381055
+LinReg       | split 02 | RMSE: 88.566224
+LinReg       | split 03 | RMSE: 91.759283
+LinReg       | split 04 | RMSE: 93.721455
+LinReg       | split 05 | RMSE: 87.339839
+RandomForest | split 01 | RMSE: 65.549091
+RandomForest | split 02 | RMSE: 63.889659
+RandomForest | split 03 | RMSE: 67.095361
+RandomForest | split 04 | RMSE: 65.183492
+RandomForest | split 05 | RMSE: 64.972622
+MLP          | split 01 | RMSE: 92.946620
+MLP          | split 02 | RMSE: 91.793404
+MLP          | split 03 | RMSE: 96.805214
+MLP          | split 04 | RMSE: 99.134138
+MLP          | split 05 | RMSE: 92.930779
+SVR          | split 01 | RMSE: 145.556283
+SVR          | split 02 | RMSE: 142.481637
+SVR          | split 03 | RMSE: 148.267167
+SVR          | split 04 | RMSE: 151.432013
+SVR          | split 05 | RMSE: 156.060908
+XGBoost      | split 01 | RMSE: 69.606147
+XGBoost      | split 02 | RMSE: 64.943485
+XGBoost      | split 03 | RMSE: 67.804557
+XGBoost      | split 04 | RMSE: 66.144625
+XGBoost      | split 05 | RMSE: 66.801659
+LightGBM     | split 01 | RMSE: 63.596877
+LightGBM     | split 02 | RMSE: 62.944432
+LightGBM     | split 03 | RMSE: 65.334465
+LightGBM     | split 04 | RMSE: 61.045875
+LightGBM     | split 05 | RMSE: 63.309259
+CatBoost     | split 01 | RMSE: 59.956732
+CatBoost     | split 02 | RMSE: 59.497129
+CatBoost     | split 03 | RMSE: 62.851569
+CatBoost     | split 04 | RMSE: 57.812140
+CatBoost     | split 05 | RMSE: 60.293873
+TabPFN2.5    | split 01 | RMSE: 49.016417
+TabPFN2.5    | split 02 | RMSE: 44.812602
+TabPFN2.5    | split 03 | RMSE: 50.040954
+TabPFN2.5    | split 04 | RMSE: 45.742908
+TabPFN2.5    | split 05 | RMSE: 49.837680
+
+[5/6] Jorgenson_Temp_Liq_regression.csv (Regression)
+  X: (1782, 9), y: (1782,)
+LinReg       | split 01 | RMSE: 79.926692
+LinReg       | split 02 | RMSE: 78.651152
+LinReg       | split 03 | RMSE: 83.733179
+LinReg       | split 04 | RMSE: 82.910273
+LinReg       | split 05 | RMSE: 90.058874
+RandomForest | split 01 | RMSE: 57.591629
+RandomForest | split 02 | RMSE: 56.695527
+RandomForest | split 03 | RMSE: 60.059392
+RandomForest | split 04 | RMSE: 57.271670
+RandomForest | split 05 | RMSE: 68.118021
+MLP          | split 01 | RMSE: 87.975938
+MLP          | split 02 | RMSE: 84.778154
+MLP          | split 03 | RMSE: 88.410879
+MLP          | split 04 | RMSE: 91.408616
+MLP          | split 05 | RMSE: 94.785001
+SVR          | split 01 | RMSE: 127.503304
+SVR          | split 02 | RMSE: 125.267567
+SVR          | split 03 | RMSE: 129.858745
+SVR          | split 04 | RMSE: 133.572122
+SVR          | split 05 | RMSE: 137.250120
+XGBoost      | split 01 | RMSE: 59.002032
+XGBoost      | split 02 | RMSE: 56.823092
+XGBoost      | split 03 | RMSE: 60.781997
+XGBoost      | split 04 | RMSE: 57.046682
+XGBoost      | split 05 | RMSE: 64.863805
+LightGBM     | split 01 | RMSE: 55.515039
+LightGBM     | split 02 | RMSE: 57.898392
+LightGBM     | split 03 | RMSE: 57.222437
+LightGBM     | split 04 | RMSE: 55.756389
+LightGBM     | split 05 | RMSE: 66.300024
+CatBoost     | split 01 | RMSE: 55.749707
+CatBoost     | split 02 | RMSE: 54.249171
+CatBoost     | split 03 | RMSE: 53.135737
+CatBoost     | split 04 | RMSE: 51.751557
+CatBoost     | split 05 | RMSE: 60.000735
+TabPFN2.5    | split 01 | RMSE: 41.095199
+TabPFN2.5    | split 02 | RMSE: 41.569803
+TabPFN2.5    | split 03 | RMSE: 38.560881
+TabPFN2.5    | split 04 | RMSE: 38.800404
+TabPFN2.5    | split 05 | RMSE: 46.972059
+Skipping TE_Data_classification.csv: detected as classification (not regression)
+
+Regression results: 160 rows
+
+Saved raw results: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/raw_combined_results.csv
+Total results: 240 rows across 6 datasets
+Tasks: {'regression': 160, 'classification': 80}
+
+============================================================
+CREATING RAW-METRIC BAR PLOTS (ROC-AUC / RMSE per dataset)
+============================================================
+Saved (classification): /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/raw_metric_plots/barplot_AutomaticRock_classification.pdf
+Saved (regression): /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/raw_metric_plots/barplot_Jorgenson_Liq_regression.pdf
+Saved (regression): /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/raw_metric_plots/barplot_Jorgenson_Pressure_Cpx_regression.pdf
+Saved (regression): /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/raw_metric_plots/barplot_Jorgenson_Temp_Cpx_regression.pdf
+Saved (regression): /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/raw_metric_plots/barplot_Jorgenson_Temp_Liq_regression.pdf
+Saved (classification): /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/raw_metric_plots/barplot_TE_Data_classification.pdf
+
+Created 6 raw-metric bar plots.
+
+============================================================
+NORMALIZING RESULTS (per dataset, per split)
+============================================================
+Saved normalized results: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/normalized_combined_results.csv
+
+============================================================
+CREATING AGGREGATE BAR PLOT (mean across datasets; error bars = SEM)
+============================================================
+Saved: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/aggregate_barplot_ranked.pdf
+
+Method Rankings (mean ± SEM):
+  method_display      mean           sem  count
+7      TabPFN2.5  1.000000  1.450948e-12      6
+0             CB  0.891828  3.799982e-02      6
+4             RF  0.863515  4.774860e-02      6
+8            XGB  0.852715  5.134620e-02      6
+1           LGBM  0.700782  1.455470e-01      6
+3            MLP  0.572570  9.266986e-02      6
+5            SVM  0.522458  4.771129e-01      2
+2         Linear  0.476186  1.355745e-01      6
+6            SVR  0.000000  0.000000e+00      4
+
+============================================================
+CREATING PER-DATASET BAR PLOTS (mean across splits; error bars = SEM)
+============================================================
+Saved: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/barplot_AutomaticRock_classification.pdf
+Saved: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/barplot_Jorgenson_Liq_regression.pdf
+Saved: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/barplot_Jorgenson_Pressure_Cpx_regression.pdf
+Saved: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/barplot_Jorgenson_Temp_Cpx_regression.pdf
+Saved: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/barplot_Jorgenson_Temp_Liq_regression.pdf
+Saved: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/barplot_TE_Data_classification.pdf
+
+Created 6 per-dataset bar plots
+
+============================================================
+SUMMARY STATISTICS BY TASK (mean ± SEM across datasets)
+============================================================
+              task        method      mean           std  count           sem
+6   classification     TabPFN2.5  1.000000  2.772312e-12      2  1.960321e-12
+0   classification      CatBoost  0.999982  2.584359e-05      2  1.827418e-05
+7   classification       XGBoost  0.999946  7.610628e-05      2  5.381527e-05
+4   classification  RandomForest  0.999941  8.318396e-05      2  5.881995e-05
+3   classification           MLP  0.689800  4.385942e-01      2  3.101330e-01
+5   classification           SVM  0.522458  6.747395e-01      2  4.771129e-01
+2   classification        LogReg  0.500817  6.827330e-01      2  4.827652e-01
+1   classification      LightGBM  0.500000  7.071068e-01      2  5.000000e-01
+14      regression     TabPFN2.5  1.000000  1.382198e-13      4  6.910989e-14
+8       regression      CatBoost  0.837752  5.237085e-02      4  2.618542e-02
+9       regression      LightGBM  0.801173  6.970835e-02      4  3.485418e-02
+12      regression  RandomForest  0.795301  6.470749e-02      4  3.235375e-02
+15      regression       XGBoost  0.779100  6.846408e-02      4  3.423204e-02
+11      regression           MLP  0.513956  8.951354e-02      4  4.475677e-02
+10      regression        LinReg  0.463871  1.668021e-01      4  8.340106e-02
+13      regression           SVR  0.000000  0.000000e+00      4  0.000000e+00
+
+============================================================
+CREATING BIG TABLE (dataset-level summary with ranks)
+============================================================
+Saved big table: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined/big_table_all_datasets.csv
+  Shape: (6, 35)
+  Columns: 35
+  Datasets: 6
+
+Done. Outputs in: /home/guptaa/anshul/geochem-benchmark/results/benchmark_outputs_combined
+End Time: Tue Jun 16 10:30:43 PM CEST 2026
+Job completed successfully!
